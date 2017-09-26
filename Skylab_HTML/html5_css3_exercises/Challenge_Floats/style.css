@@ -1,0 +1,30 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+header{
+  height: 100px;
+  background-color: #838283
+}
+div{
+  height: 30px;
+  background-color: #A2A2A2;
+}
+aside{
+  background-color: #333333;
+  float: left;
+  height: 600px;
+  width: 20%;
+}
+section{
+  background-color: #D2D0D2;
+  float: right;
+  height: 600px;
+  width: 80%;
+}
+footer{
+  width: 100%;
+  clear: both;
+  background-color: #838283;
+  height: 100px;
+}

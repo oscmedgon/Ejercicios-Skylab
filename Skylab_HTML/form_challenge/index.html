@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Challenge</title>
+</head>
+<body>
+  <form action="" method="POST">
+    <fieldset>
+      <legend>
+        Customer info
+      </legend>
+      <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="nameInput" placeholder="Enter your name" requiered autofocus>
+      </div>
+      <div>
+        <label for="phone">Telephone: </label>
+        <input id="phone" type="tel" name="phoneInput" pattern="\b\d{1}[- .]?\d{3}[- .]?\d{3}[- .]?\d{4}\b" placeholder="Pattern: 1-444-555-1234" required>
+      </div>
+      <div>
+        <label for="email">Email Address: : </label>
+        <input id="email" type="email" name="e-mailInput" placeholder="enter your email address" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Books
+      </legend>
+      <input list="books" name="book">
+      <datalist id="books">
+        <option value="El último deseo">
+        <option value="La espada del destino">
+        <option value=" La sangre de los elfos">
+        <option value=" Tiempo de odio">
+        <option value=" Bautismo de fuego">
+      </datalist>
+      <label for="quantity">Quantity (Maximum 5): </label>
+      <input id="quantity" type="number" name="quantity" min="1" max="5">
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
